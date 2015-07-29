@@ -9,5 +9,13 @@
 </body>
 
 <template name="myApp">
-	Data Placeholder
+	<ol>
+	{{#each myOrgs}}
+	<li>
+		<span><b> {{name}} </b></span>
+		<span><i> {{city}}, {{state}} {{country}} </i></span>
+		<span><b> {{deductibility}} </b></span>
+	</li>
+	{{/each}}	
+	</ol>
 </template>
